@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "incremental": false,
+    "moduleResolution": "node",
+    "lib": ["es2019", "DOM", "esnext.bigint"],
+    "outDir": "dist/src",
+    "sourceMap": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "target": "es2019",
+    "types": ["multer", "helmet", "jest"],
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["src/**/*", ".migrations/**/*", "src/services"],
+  "exclude": ["node_modules", "dist"]
+}
